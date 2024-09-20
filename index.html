@@ -8,6 +8,33 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
+    <div class="pop_up">
+        <div class="get">
+            <div class="get_blokc">
+                <div class="get_cont">
+                    <div class="legiano" id="link5" >
+                        <div class="legiano_top">
+                        <div class="legiano_1">
+                            <img src="img/best.png" alt="">
+                            <img class="foto" src="img/legiano.png" alt="">
+                        </div>
+                            <div class="legiano_2">
+                                <h1>9.9</h1>
+                                <h2>Voices (7,891)</h2>
+                                <img src="img/stars.png" alt="">
+                            </div>
+                        </div>
+                        <div class="get_bonus">
+                            <h3>100% up to €500 <br> + 200 FS </h3>
+                            <h4>+ 1 Bonus Crab</h4>
+                            <a href="https://www.traffiqtraq.com/track/898ba08c-fc17-4176-8506-a45986ebba4a?type=ppc&s1=LG_SL68">Get Bonus</a>
+                            <img src="img/payment.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="best">
         <div class="best_cont">
             <a href="index.php"><img src="img/logo.png" alt=""></a>
@@ -109,7 +136,7 @@
             </div>
             <div class="get_bonus">
                 <h3>100% up <br> to €120 </h3>
-                <h4>+ 1 Bonus Crab</h4>
+                <h4>+ 120 FS</h4>
                 <a href="https://www.traffiqtraq.com/track/955ede51-477e-4808-b63d-e9d8547dbb7d?type=ppc&s1=20_SL68">Get Bonus</a>
                 <img src="img/payment.png" alt="">
             </div>
@@ -170,6 +197,19 @@
         $('#link4').click(function (){
             location.href="https://www.traffiqtraq.com/track/955ede51-477e-4808-b63d-e9d8547dbb7d?type=ppc&s1=20_SL68";
         });
+        $('#link5').click(function (){
+            location.href="https://www.traffiqtraq.com/track/898ba08c-fc17-4176-8506-a45986ebba4a?type=ppc&s1=LG_SL68";
+        });
+        setTimeout(() => {
+            $('.pop_up').css('display','flex');
+        }, 40000);
+        $(document).mouseup(function (e){ 
+		var div = $("#link5"); 
+		if (!div.is(e.target)
+		    && div.has(e.target).length === 0) { 
+			$('.pop_up').css('display','none');
+		}
+	});
     </script>
 </body>
 </html>

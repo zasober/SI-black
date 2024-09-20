@@ -145,7 +145,7 @@ body,html{
     background-position-y: bottom;
 }
 .legiano{
-    width: 35%;
+    width: 450px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ body,html{
 .legiano_1 img{
     width: 140px;
     height: fit-content;
-    margin-left: -170px;
+    margin-left: -188px;
 }
 .legiano_1 .foto{
     width: 216px;
@@ -237,6 +237,39 @@ body,html{
     text-decoration: none;
     margin-bottom: 20px;
 }
+.malino .get_bonus h3{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #F0EBF1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.malino .get_bonus h4{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #F0EBF1;
+    font-style: italic;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.malino .get_bonus a{
+    width: 298px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF9F33;
+    border: 2px solid #080D6F;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #080D6F;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
 .get_bonus a:hover{
     cursor: pointer;
     box-shadow: 0px 0px 50px 0px #FF9F33;
@@ -259,7 +292,7 @@ body,html{
     margin-top: 20px;
 }
 .malino_blokc .legiano{
-    width: 30%;
+    width: 388px;
 }
 .malino_blokc .legiano_1 img{
     width: 160px;
@@ -426,12 +459,7 @@ footer{
 
 
 
-.legiano:hover{
-    cursor: pointer;
-    box-shadow: 0px 0px 50px 0px #FF9F33;
 
-
-}
 .privacy{
     width: 100%;
     display: flex;
@@ -478,10 +506,39 @@ footer{
 
 
 
+.legiano:hover{
+    cursor: pointer;
 
 
+}
+.pop_up{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 50;
+    background-color: #000000b6;
+    left: 0;
+    top: 0;
+
+}
+.pop_up .legiano{
+    background-color: #c1a3be;
+}
+.pop_up .legiano_top{
+    background-color: #c1a3be;
+    margin-bottom: 25px;
+}
 
 @media screen and (max-width: 900px){
+    .legiano:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 50px 0px #FF9F33;
+    
+    
+    }
     .online h5{
         width: 330px;
         font-size: 20px;
