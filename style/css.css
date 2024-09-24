@@ -137,17 +137,17 @@ body,html{
 }
 .legiano_top{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     background-image: url(../img/bagraund.png);
     border-radius: 20px;
-    height: 210px;
+    height: 190px;
     background-size: cover;
     border-bottom-right-radius: 0;
     background-position-y: bottom;
 }
 .legiano{
-    width: 450px;
+    width: 400px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -175,11 +175,11 @@ body,html{
 .legiano .best_img{
     position: absolute;
     margin-left: 0;
-    left: -50px;
+    left: -40px;
     margin-top: 0;
 }
 .legiano_1 .foto{
-    width: 216px;
+    width: 180px;
     height: fit-content;
     margin-left: 0;
 }
@@ -192,14 +192,14 @@ body,html{
     padding-left: 0;
 }
 .legiano_2 h1{
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
     color: #080D6F;
     margin-bottom: 0;
     margin-top: 0;
 }
 .legiano_2 h2{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #080D6F;
     margin-top: 0;
@@ -207,7 +207,7 @@ body,html{
     margin-bottom: 0;
 }
 .legiano_2 img{
-    width: 175px;
+    width: 140px;
     height: fit-content;
     margin-top: 0;
 }
@@ -217,31 +217,33 @@ body,html{
     align-items: center;
 }
 .get_bonus h3{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #F0EBF1;
     text-align: center;
     text-transform: uppercase;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 .get_bonus h4{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     color: #F0EBF1;
     font-style: italic;
     margin-top: 0;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 .get_bonus a{
-    width: 298px;
-    height: 60px;
+    width: 260px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #FF9F33;
     border: 2px solid #080D6F;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #080D6F;
     text-decoration: none;
@@ -266,7 +268,7 @@ body,html{
     text-transform: uppercase;
 }
 .malino .get_bonus a{
-    width: 298px;
+    width: 250px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -274,7 +276,7 @@ body,html{
     background: #FF9F33;
     border: 2px solid #080D6F;
     border-radius: 30px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #080D6F;
     text-decoration: none;
@@ -286,9 +288,12 @@ body,html{
 
 }
 .get_bonus img{
-    width: 280px;
+    width: 260px;
     height: fit-content;
     margin-bottom: 40px;
+}
+.legiano:hover{
+    box-shadow: 0px 0px 50px 0px #585858;
 }
 .malino{
     width: 100%;
@@ -296,13 +301,13 @@ body,html{
     justify-content: center;
 }
 .malino_blokc{
-    width: 95%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 .malino_blokc .legiano{
-    width: 388px;
+    width: 350px;
 }
 .malino_blokc .legiano_1 img{
     height: 75px;
@@ -323,7 +328,7 @@ body,html{
     margin-bottom: 10px;
 }
 .malino_blokc .get_bonus a{
-    width: 255px;
+    width: 250px;
 }
 .online .onl{
     display: none;
@@ -567,21 +572,9 @@ footer{
 #link5:hover{
     cursor: auto;
 }
-@media screen and (min-width: 900px){
-#link1:hover{
-    width: 500px;
-}
-.malino_blokc .legiano:hover{
-    width: 440px;
-}
-}
+
 @media screen and (max-width: 900px){
-    .legiano:hover{
-        cursor: pointer;
-        box-shadow: 0px 0px 50px 0px #FF9F33;
-    
-    
-    }
+  
     .online h5{
         width: 90%;
         font-size: 20px;
