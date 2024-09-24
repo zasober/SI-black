@@ -13,9 +13,10 @@
             <div class="get_blokc">
                 <div class="get_cont">
                     <div class="legiano" id="link5" >
+                        <img src="img/close.png" class="close" alt="">
                         <div class="legiano_top">
                         <div class="legiano_1">
-                            <img src="img/best.png" alt="">
+                            <img src="img/best.png" class="best_img" alt="">
                             <img class="foto" src="img/legiano.png" alt="">
                         </div>
                             <div class="legiano_2">
@@ -48,8 +49,10 @@
     
 
     <div class="online">
-        <h1>The best online casinos in <span> Slovenia in 2024 </span> </h1>
-        <h1 class="onl">Top online casinos in <b> Slovenia in 2024 </b> </h1>
+        <h1>The best online casinos <br> <span>in Slovenia in 2024</span></h1>
+     <h1 class="onl">Top online casinos 
+        <br><span>in Slovenia 
+        in 2024</span></h1>
         <p>Explore top online casinos offering exclusive welcome bonuses! Sign up now and begin playing with bonus credits!</p>
         <div class="new_1">
         <h4>reward for a new level</h4>
@@ -65,7 +68,7 @@
                 <div class="legiano" id="link1">
                     <div class="legiano_top">
                     <div class="legiano_1">
-                        <img src="img/best.png" alt="">
+                        <img src="img/best.png" class="best_img" id="best1" alt="">
                         <img class="foto" src="img/legiano.png" alt="">
                     </div>
                         <div class="legiano_2">
@@ -135,7 +138,7 @@
                 </div>
             </div>
             <div class="get_bonus">
-                <h3>100% up <br> to €120 </h3>
+                <h3>100% up to <br> €120 </h3>
                 <h4>+ 120 FS</h4>
                 <a href="https://www.traffiqtraq.com/track/955ede51-477e-4808-b63d-e9d8547dbb7d?type=ppc&s1=20_SL68">Get Bonus</a>
                 <img src="img/payment.png" alt="">
@@ -147,16 +150,16 @@
     <div class="casinos">
         <div class="safe">
         <h1>Are Slovenian online casinos safe?</h1>
-    </div>
+        </div>
         <p>Yes, the online casinos available for Slovenian players are safe and secure. They are regulated by reputable international bodies and use advanced encryption technologies to protect your personal and financial information. Regular independent audits are carried out to ensure the games are fair, offering a safe and secure gaming environment.</p>
         <div class="players">
         <h2>Protection of players by Slovenian providers</h2>
-    </div>
-        <p>Player protection is the top priority of Slovenian online casinos. These platforms implement strict identity verification to ensure that minors can gamble and offer self-exclusion options for players who wish to suspend play. They also provide resources to support responsible gaming and use advanced security measures to protect player information, ensuring a safe and fair gaming environment.</p>
+        </div>
+        <p class="center_p">Player protection is the top priority of Slovenian online casinos. These platforms implement strict identity verification to ensure that minors can gamble and offer self-exclusion options for players who wish to suspend play. They also provide resources to support responsible gaming and use advanced security measures to protect player information, ensuring a safe and fair gaming environment.</p>
         <div class="safe">
         <h3>Legal Notice</h3>
-    </div>
-        <p>All casinos featured on our site are fully legal for Slovenian players and operate under valid licenses from verified regulatory authorities. You must be at least 18 years of age to access our site, depending on the laws in your province, and you must comply with the gambling laws in your area.</p>
+        </div>
+        <p class="right_p">All casinos featured on our site are fully legal for Slovenian players and operate under valid licenses from verified regulatory authorities. You must be at least 18 years of age to access our site, depending on the laws in your province, and you must comply with the gambling laws in your area.</p>
     </div>
 
     <footer>
@@ -197,19 +200,34 @@
         $('#link4').click(function (){
             location.href="https://www.traffiqtraq.com/track/955ede51-477e-4808-b63d-e9d8547dbb7d?type=ppc&s1=20_SL68";
         });
-        $('#link5').click(function (){
-            location.href="https://www.traffiqtraq.com/track/898ba08c-fc17-4176-8506-a45986ebba4a?type=ppc&s1=LG_SL68";
-        });
+       
         setTimeout(() => {
             $('.pop_up').css('display','flex');
         }, 40000);
-        $(document).mouseup(function (e){ 
-		var div = $("#link5"); 
-		if (!div.is(e.target)
-		    && div.has(e.target).length === 0) { 
-			$('.pop_up').css('display','none');
-		}
-	});
+       $('.close').on('click',function(){
+        $('.pop_up').css('display','none');
+       });
+       const mediaQuery = window.matchMedia('(min-width: 900px)')
+       if (mediaQuery.matches) {
+       $('#link1').on('mouseover',function(){
+        $(this).children('.get_bonus').css('padding-top','25px');
+        $(this).children('.get_bonus').css('padding-bottom','25px');
+        $('#best1').css('left','-70px');
+       });
+       $('#link1').on('mouseleave',function(){
+        $(this).children('.get_bonus').css('padding-top','0px');
+        $(this).children('.get_bonus').css('padding-bottom','0px');
+        $('#best1').css('left','-50px');
+       });
+       $('.malino_blokc').children('.legiano').on('mouseover',function(){
+        $(this).children('.get_bonus').css('padding-top','25px');
+        $(this).children('.get_bonus').css('padding-bottom','25px');
+       });
+       $('.malino_blokc').children('.legiano').on('mouseleave',function(){
+        $(this).children('.get_bonus').css('padding-top','0px');
+        $(this).children('.get_bonus').css('padding-bottom','0px');
+       });
+    }
     </script>
 </body>
 </html>
